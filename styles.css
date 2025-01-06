@@ -1,0 +1,132 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.add-task-container {
+  margin-bottom: 20px;
+}
+
+#new-task {
+  padding: 5px;
+  border: 2px solid #ccc; 
+  font-size: 16px; 
+  border-radius: 5px; 
+  width: 200px;
+  outline: none;
+}
+
+#add-task-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#add-task-btn:hover {
+  background-color: #0056b3;
+}
+
+#add-task-btn:active {
+  background-color: #003d7a;
+  transform: scale(0.98);
+}
+
+/* Tableau des tâches */
+table { 
+  width: 100%;
+  border-collapse: separate; 
+  border-spacing: 0; 
+  margin: 20px 0; 
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.15); 
+  border: 2px solid #3498db; 
+}
+
+/* Styles pour l'en-tête de table */
+table th { 
+  background-color: #555;
+  color: white; 
+  padding: 10px 15px; 
+  border: 1px solid #666; 
+}
+
+/* Styles pour les cellules de la table */
+table td { 
+  padding: 10px 15px; 
+  border: 1px solid #ddd; 
+}
+
+/* Effet de survol pour les cellules de la table */
+table td:hover { 
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); 
+  background-color: #ddd; 
+}
+
+table td, table th {
+  text-align: center; 
+  vertical-align: middle;
+}
+
+/* Styles pour l'en-tête de la table */
+caption { 
+  padding: 10px;
+  background-color: #3498db;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold; 
+  text-shadow: 1px 1px 1px #666;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1) inset; 
+  border-bottom: 2px solid #2980b9;
+}
+
+td button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+td button:hover {
+  background-color: #c82333;
+}
+
+td button:active {
+  background-color: #930a17;
+}
+
+select {
+  padding: 10px; 
+  border: 2px solid #ccc; 
+  font-size: 16px; 
+  border-radius: 5px; 
+  width: 220px; 
+  background-color: #fff; 
+  color: #333; 
+  outline: none;
+  cursor: pointer; 
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+select:hover,
+select:focus {
+  border-color: #007bff; 
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+select option {
+  padding: 10px; 
+  background-color: #fff;
+  color: #333;
+  border: none;
+  text-align: left; 
+}
+
+select option:hover {
+  background-color: #f1f1f1;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste de Tâches</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="add-task-container">
+        <input type="text" id="new-task" placeholder="Entrez votre tâche...">
+        <button id="add-task-btn">Ajouter une tâche</button>
+    </div>
+
+    
+
+    <div>
+        <table id="task-table">
+            <caption>Listes des Tâches</caption>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Terminer</th>
+                    <th>Description</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="task-container">
+
+            </tbody>
+        </table>        
+        
+        <select id="task-filter">
+            <option value="all">Toutes les tâches</option>
+            <option value="completed">Tâches terminées</option>
+            <option value="pending">Tâches non terminées</option>
+        </select>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
